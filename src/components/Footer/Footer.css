@@ -21,8 +21,15 @@
 .social-icons a svg {
   color: #ef233c;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
+  transition: 0.4s;
 }
+
+.social-icons a svg:hover {
+  color: #d90429;
+  transform: rotate(360deg) scale(1.1);
+}
+
 .copyright {
   background: #2b2d42;
   color: #edf2f4;
