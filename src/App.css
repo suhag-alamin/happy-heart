@@ -24,3 +24,10 @@ a {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
+/* button style  */
+.happy-btn {
+  background: #ef233c;
+}
+.happy-btn:hover {
+  background: #d90429;
+}
