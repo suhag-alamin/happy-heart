@@ -1,10 +1,36 @@
 /* footer style  */
+.map-container {
+  position: relative;
+}
 .footer-details {
   background: #282828;
   padding: 10px 20px;
-  position: relative;
-  top: -410px;
+  position: absolute;
+  bottom: -40px;
+  z-index: 2;
 }
-/* .footer-details-text {
-  font-weight: 400 !important;
-} */
+
+.logo-social-section {
+  background: #edf2f4;
+  z-index: 9;
+  position: absolute;
+  width: 80%;
+  bottom: -90px;
+}
+
+.social-icons a svg {
+  color: #ef233c;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.copyright {
+  background: #2b2d42;
+  color: #edf2f4;
+  padding: 10px 0;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+}
