@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
@@ -34,6 +35,7 @@ function App() {
             <PageNotFound></PageNotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
