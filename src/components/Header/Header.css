@@ -1,0 +1,35 @@
+/* heder style */
+/* nav bar  */
+.nav-bar {
+  background: #edf2f4;
+}
+/* nav link  */
+.nav-link {
+  font-size: 18px;
+  color: #2b2d42 !important;
+  padding: 5px 10px;
+  margin-left: 15px;
+  position: relative;
+  transition: 0.4s;
+}
+/* navlink hover  */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ef233c;
+  transition: 0.4s;
+}
+.nav-link:hover {
+  color: #ef233c !important;
+}
+.nav-link:hover.nav-link::after {
+  width: 100%;
+}
+/* active nav link */
+.selected {
+  color: #ef233c !important;
+}
