@@ -1,13 +1,15 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./SingleTeamMember.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const SingleTeamMember = ({ member }) => {
   const { name, img, degisnation, description } = member;
   return (
     <div>
-      <Card className="h-100 shadow-lg">
-        <div>
+      <Card className="h-100 shadow-lg team-member-box">
+        <div className="member-img overflow-hidden">
           <Card.Img variant="top" src={img} />
         </div>
         <Card.Body

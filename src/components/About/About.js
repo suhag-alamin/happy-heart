@@ -32,15 +32,13 @@ const About = () => {
         <span>About</span>
       </OtherPageBanner>
       <Container className="py-5">
-        <div className="about-top">
-          <p className="single-service-title mb-4">
-            MEDICAL EXCELLENCE, COMPASSIONATE CARE
-          </p>
+        <div className="about-top text-center">
+          <p className="title mb-4">MEDICAL EXCELLENCE, COMPASSIONATE CARE</p>
           <h3 className="fs-1">What we stand for?</h3>
           <h3 className="section-title fs-1" style={{ fontWeight: 700 }}>
             Our core values
           </h3>
-          <p className="text-muted w-50 my-4">
+          <p className="text-muted w-50 mx-auto my-4">
             Completely synergize resource taxing relationships via premier niche
             markets. Professionally cultivate one-to-one customer service with
             robust ideas.
@@ -137,23 +135,23 @@ const About = () => {
         </Row>
       </Container>
       {/* team member section  */}
-      <Container fluid className="team-member-section py-5">
+      <Container fluid className="team-member-section text-center py-5">
         <Container>
           {/* team member top  */}
           <div className="about-top">
-            <p className="single-service-title mb-4">PEOPLE YOU CAN TRUST</p>
+            <p className="title mb-4">PEOPLE YOU CAN TRUST</p>
             <h3 className="fs-1">Your reliable team</h3>
             <h3 className="section-title fs-1" style={{ fontWeight: 700 }}>
               Medicare doctors
             </h3>
-            <p className="text-muted w-50 my-4">
+            <p className="text-muted w-50 mx-auto my-4">
               Objectively integrate enterprise-wide strategic theme areas with
               functionalized infrastructures. Interactively productize premium
               technologies.
             </p>
           </div>
           {/* team members  */}
-          <Row xs={1} md={2} lg={4} className="g-4 py-5 text-center">
+          <Row xs={1} md={2} lg={3} xl={4} className="g-4 py-5 text-center">
             {team.map((member) => (
               <Col key={member.id} className="h-100">
                 <SingleTeamMember member={member}></SingleTeamMember>
