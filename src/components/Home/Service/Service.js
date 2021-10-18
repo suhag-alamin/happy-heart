@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
-import useAuth from "../../../hooks/useAuth";
+import { Col, Container, Row } from "react-bootstrap";
+import useData from "../../../hooks/useData";
+import SingleService from "../../Services/SingleService/SingleService";
 import "./Service.css";
 
 const Service = () => {
-  const { services } = useAuth();
+  const services = useData();
+  console.log(services);
   return (
     <>
       <Container className="py-5">
@@ -12,7 +14,13 @@ const Service = () => {
           {" "}
           <span className="section-title">SERVICES</span> AT ONE GLANCE
         </h3>
-        <Row>{}</Row>
+        <Row>
+          {services.map((serive) => (
+            <Col lg={4}>
+              <SingleService></SingleService>
+            </Col>
+          ))}
+        </Row>
       </Container>
     </>
   );

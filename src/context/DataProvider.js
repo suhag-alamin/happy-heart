@@ -11,6 +11,7 @@ const DataProvider = ({ children }) => {
     };
     loadData();
   }, []);
+  console.log(services);
   return (
     <DataContext.Provider value={services}>{children}</DataContext.Provider>
   );
