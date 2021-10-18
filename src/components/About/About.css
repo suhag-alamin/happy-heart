@@ -1,0 +1,20 @@
+/* about page style  */
+.about-top .single-service-title::after {
+  background: #d90429;
+}
+/* about-values */
+.about-values .feature-text {
+  line-height: 24px;
+  text-align: justify;
+}
+/* about-icon */
+.about-icon {
+  display: inline-block;
+  color: #ef233c;
+  font-size: 46px;
+  transition: 0.4s;
+}
+.value-div:hover .about-icon {
+  color: #2b2d42;
+  cursor: pointer;
+}
