@@ -19,7 +19,7 @@ const Login = () => {
       <Container fluid className="py-5 password-authentication-container">
         <div className="form-container bg-white px-4 py-3 rounded-2 shadow w-50 mx-auto mt-3">
           <h3 className="mb-5 text-center">
-            Please <span className="section-title">SignUp</span>
+            Please <span className="section-title">LogIn</span>
           </h3>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
