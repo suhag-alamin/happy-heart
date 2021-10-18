@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 import logo from "../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <>
       <Navbar className="nav-bar shadow sticky-top" expand="lg">
@@ -14,7 +16,7 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto d-flex align-items-center">
               <Nav.Link
                 as={NavLink}
                 activeClassName="selected"
@@ -47,22 +49,38 @@ const Header = () => {
               >
                 Contact
               </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                activeClassName="selected"
-                className="nav-link"
-                to="/login"
-              >
-                Login
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                activeClassName="selected"
-                className="nav-link"
-                to="/signup"
-              >
-                SignUp
-              </Nav.Link>
+              {!user?.email && (
+                <Nav.Link
+                  as={NavLink}
+                  activeClassName="selected"
+                  className="nav-link"
+                  to="/login"
+                >
+                  Login
+                </Nav.Link>
+              )}
+              {!user?.email && (
+                <Nav.Link
+                  as={NavLink}
+                  activeClassName="selected"
+                  className="nav-link"
+                  to="/signup"
+                >
+                  SignUp
+                </Nav.Link>
+              )}
+              {user?.email && (
+                <Button onClick={logOut} className="nav-link" variant="text">
+                  Logout
+                </Button>
+              )}
+              <span>
+                {user?.photoURL ? (
+                  <img className="user-img" src={user.photoURL} alt="" />
+                ) : (
+                  <small>{user?.displayName}</small>
+                )}
+              </span>
             </Nav>
           </Navbar.Collapse>
         </Container>

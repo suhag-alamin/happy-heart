@@ -4,8 +4,9 @@ import {
   GoogleAuthProvider,
   GithubAuthProvider,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
 import swal from "sweetalert";
 
@@ -65,6 +66,19 @@ const useFirebase = () => {
         });
       });
   };
+
+  //   observed user
+  useEffect(() => {
+    const unsubscirbe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser();
+      }
+    });
+    return unsubscirbe;
+  }, [auth]);
+
   return {
     signInUsingGoogle,
     signInUsingGithub,
