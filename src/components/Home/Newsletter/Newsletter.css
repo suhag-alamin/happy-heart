@@ -1,0 +1,4 @@
+/* newsletter section style  */
+.newsletter .single-service-title::after {
+  background: #ef233c;
+}

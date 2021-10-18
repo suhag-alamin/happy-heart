@@ -16,6 +16,8 @@ import Services from "./components/Services/Services";
 import AuthProvider from "./context/AuthProvider";
 import DataProvider from "./context/DataProvider";
 
+import "animate.css";
+
 function App() {
   return (
     <div className="App">

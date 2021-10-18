@@ -9,7 +9,10 @@ const Banner = () => {
         <Carousel.Item interval={1000} className="slider-one">
           <Row>
             <Col lg={1}></Col>
-            <Col lg={6} className="slider-item">
+            <Col
+              lg={6}
+              className="slider-item animate__animated animate__fadeInLeftBig"
+            >
               <div>
                 <span className="slider-top-text">INSPIRING BETTER HEALTH</span>
                 <h1>Healthy heart,</h1>
@@ -27,7 +30,10 @@ const Banner = () => {
         <Carousel.Item interval={1000} className="slider-two">
           <Row>
             <Col lg={1}></Col>
-            <Col lg={6} className="slider-item">
+            <Col
+              lg={6}
+              className="slider-item animate__animated animate__fadeInRightBig"
+            >
               <span className="slider-top-text">
                 GROWING TO MEET YOUR NEEDS
               </span>

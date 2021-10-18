@@ -26,7 +26,12 @@ const Testtimonial = () => {
         </div>
         {/* author testimonials  */}
         <Row className="py-4">
-          <Col xs={12} md={6} lg={3} className="text-center">
+          <Col
+            xs={12}
+            md={6}
+            lg={3}
+            className="text-center animate__animated animate__fadeInLeft animate__delay-2s"
+          >
             <div className="author">
               <div className="author-img mb-3">
                 <img src={author1} alt="" />
@@ -44,7 +49,12 @@ const Testtimonial = () => {
               <span>CBR</span>
             </div>
           </Col>
-          <Col xs={12} md={6} lg={3} className="text-center">
+          <Col
+            xs={12}
+            md={6}
+            lg={3}
+            className="text-center animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <div className="author">
               <div className="author-img mb-3">
                 <img src={author2} alt="" />
@@ -61,7 +71,12 @@ const Testtimonial = () => {
               <span>Valve Prolapse Repair</span>
             </div>
           </Col>
-          <Col xs={12} md={6} lg={3} className="text-center">
+          <Col
+            xs={12}
+            md={6}
+            lg={3}
+            className="text-center animate__animated animate__fadeInDown animate__delay-2s"
+          >
             <div className="author">
               <div className="author-img mb-3">
                 <img src={author3} alt="" />
@@ -78,7 +93,12 @@ const Testtimonial = () => {
               <span>TMR</span>
             </div>
           </Col>
-          <Col xs={12} md={6} lg={3} className="text-center">
+          <Col
+            xs={12}
+            md={6}
+            lg={3}
+            className="text-center animate__animated animate__fadeInRight animate__delay-2s"
+          >
             <div className="author">
               <div className="author-img mb-3">
                 <img src={author4} alt="" />

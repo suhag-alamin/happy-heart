@@ -12,7 +12,7 @@ const SingleService = ({ service }) => {
   };
   return (
     <div>
-      <Card className="h-100 shadow-sm">
+      <Card className="h-100 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
         <div className="overflow-hidden">
           <Card.Img
             className="img-fluid service-img"
@@ -27,7 +27,7 @@ const SingleService = ({ service }) => {
         <Card.Footer className="bg-white border-0 pb-3">
           <Button
             onClick={handleClick}
-            className="happy-btn btn-danger px-4 py-2 rounded-3"
+            className="happy-btn btn-danger px-4 py-2 rounded-3 animate__animated animate__backInUp animate__delay-1s"
           >
             Learn More
           </Button>

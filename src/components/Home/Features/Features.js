@@ -11,6 +11,7 @@ import {
   faBuilding,
   faHeartbeat,
 } from "@fortawesome/free-solid-svg-icons";
+
 const Features = () => {
   return (
     //   feature section
@@ -18,7 +19,7 @@ const Features = () => {
       <Container className="py-5">
         <Row className="g-4 g-lg-0 feature-row">
           <Col xs={12} md={6} lg={3}>
-            <Card className="h-100">
+            <Card className="h-100 animate__animated animate__fadeInLeft">
               <Card.Img variant="top" src={feature1} />
               <Card.Body
                 className="text-white px-4 py-4"
@@ -39,7 +40,7 @@ const Features = () => {
             </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <Card className="h-100">
+            <Card className="h-100 animate__animated animate__fadeInDown animate__delay-1s">
               <Card.Img variant="top" src={feature2} />
               <Card.Body
                 className="text-white px-4 py-4"
@@ -60,7 +61,7 @@ const Features = () => {
             </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <Card className="h-100">
+            <Card className="h-100 animate__animated animate__fadeInUp animate__delay-1s">
               <Card.Img variant="top" src={feature3} />
               <Card.Body
                 className="text-white px-4 py-4"
@@ -81,7 +82,7 @@ const Features = () => {
             </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <Card className="h-100">
+            <Card className="h-100 animate__animated animate__fadeInRight animate__delay-1s">
               <Card.Img variant="top" src={feature4} />
               <Card.Body
                 className="text-white px-4 py-4"
