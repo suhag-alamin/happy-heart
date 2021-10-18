@@ -7,8 +7,7 @@ import "./Header.css";
 
 const Header = () => {
   // auth context
-  const { firebaseContext } = useAuth();
-  const { user, logOut } = firebaseContext;
+  const { user, logOut } = useAuth();
   return (
     <>
       <Navbar className="nav-bar shadow sticky-top" expand="lg">

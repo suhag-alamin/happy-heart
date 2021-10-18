@@ -9,9 +9,8 @@ import useAuth from "../../../hooks/useAuth";
 
 const SignUp = () => {
   // auth context
-  const { firebaseContext } = useAuth();
   const { signInUsingGoogle, signInUsingGithub, createNewUserByEmail } =
-    firebaseContext;
+    useAuth();
 
   // form data
   const {
