@@ -1,0 +1,35 @@
+/* banner section style */
+.slider-one {
+  background: url(../../../images/slider-1.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 200px 60px;
+}
+.slider-two {
+  background: url(../../../images/slider-2.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 200px 60px;
+}
+
+.slider-item h1 {
+  font-size: 50px;
+}
+.slider-item .section-title {
+  font-weight: 700;
+}
+.slider-top-text {
+  display: inline-block;
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.slider-top-text::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #ef233c;
+}
