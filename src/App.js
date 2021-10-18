@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -18,6 +17,7 @@ import DataProvider from "./context/DataProvider";
 
 import "animate.css";
 import Services from "./components/Services/Services/Services";
+import About from "./components/About/About/About";
 
 function App() {
   return (

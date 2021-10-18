@@ -94,7 +94,7 @@ const Footer = () => {
                 <div className="text-white">
                   <h5>BOOK AN APPOINTMENT</h5>
                   <p className="text-muted">
-                    Click here to book an appointment at Medicare.
+                    Click here to book an appointment at Happy Heart.
                   </p>
                 </div>
               </div>

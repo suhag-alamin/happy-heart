@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import OtherPageBanner from "../OtherPageBanner/OtherPageBanner";
+
 import "./About.css";
 // font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,9 @@ import {
   faAmbulance,
   faHospitalAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import SingleTeamMember from "./SingleTeamMember/SingleTeamMember";
+
+import OtherPageBanner from "../../OtherPageBanner/OtherPageBanner";
+import SingleTeamMember from "../SingleTeamMember/SingleTeamMember";
 
 const About = () => {
   // team data
@@ -29,7 +31,7 @@ const About = () => {
     <>
       {/* banner  */}
       <OtherPageBanner>
-        <span>About</span>
+        <span>About Us</span>
       </OtherPageBanner>
       <Container className="py-5">
         <div className="about-top text-center">

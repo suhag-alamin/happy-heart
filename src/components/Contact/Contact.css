@@ -1,0 +1,22 @@
+/* contact page style  */
+.contact-top {
+  background: #ef233c;
+}
+.contact-details .single-service-title::after {
+  background: #edf2f4;
+}
+.contact-icon {
+  display: inline-block;
+  width: 60px !important;
+  height: 60px;
+  background: #edf2f4;
+  color: #2b2d42;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contact-icon:hover {
+  background: #2b2d42;
+  color: #edf2f4;
+}
