@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Table } from "react-bootstrap";
+import { Col, Container, Row, Table } from "react-bootstrap";
 import "./Footer.css";
 import call from "../../images/icons/call.png";
 import location from "../../images/icons/location.png";
@@ -17,7 +17,7 @@ const Footer = () => {
     <>
       <div>
         <Container fluid className="footer-map p-0 map-container">
-          <div className="map-container">
+          <div className="map-container d-none d-md-block">
             <iframe
               title="map"
               src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d58414.91875560572!2d90.3585680978055!3d23.785420650329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d23.7806365!2d90.4193258!4m5!1s0x3755c0dbdd6121e9%3A0x28d6161b55e58cc4!2sbest%20heart%20hospital%20in%20dhaka!3m2!1d23.8036934!2d90.3619487!5e0!3m2!1sen!2sbd!4v1634499793190!5m2!1sen!2sbd"
@@ -100,36 +100,59 @@ const Footer = () => {
               </div>
             </div>
             {/* logo and social icons */}
-            <div className="d-flex justify-content-between align-items-center px-3 logo-social-section">
-              <div>
-                <img src={logo} alt="" />
-              </div>
-              <h4>
-                WE CARE, <strong className="section-title">WE CAN</strong>{" "}
-              </h4>
-              <div className="social-icons">
-                <a
-                  href="https://www.facebook.com/suhag.alamin.315/"
-                  target="_blank"
-                  rel="noreferrer"
+            <div className=" px-3 logo-social-section">
+              <Row className=" align-items-center">
+                <Col
+                  xs={12}
+                  md={6}
+                  lg={4}
+                  className="d-flex justify-content-center"
                 >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a
-                  href="https://twitter.com/suhag_alamain"
-                  target="_blank"
-                  rel="noreferrer"
+                  <div>
+                    <img className="footer-logo" src={logo} alt="" />
+                  </div>
+                </Col>
+                <Col
+                  xs={12}
+                  md={6}
+                  lg={5}
+                  className="d-flex justify-content-center"
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a
-                  href="https://github.com/developer-suhag"
-                  target="_blank"
-                  rel="noreferrer"
+                  <h4 className="footer-title">
+                    WE CARE, <strong className="section-title">WE CAN</strong>{" "}
+                  </h4>
+                </Col>
+                <Col
+                  xs={12}
+                  md={12}
+                  lg={3}
+                  className="d-flex justify-content-center"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </div>
+                  <div className="social-icons">
+                    <a
+                      href="https://www.facebook.com/suhag.alamin.315/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                    <a
+                      href="https://twitter.com/suhag_alamain"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    <a
+                      href="https://github.com/developer-suhag"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </Container>
         </Container>

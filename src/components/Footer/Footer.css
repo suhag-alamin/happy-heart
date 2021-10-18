@@ -41,3 +41,24 @@
 .copyright p {
   margin: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-details {
+    position: inherit;
+  }
+  .logo-social-section {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    position: inherit;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-logo {
+    width: 100px;
+  }
+  .footer-title {
+    font-size: 16px;
+  }
+}
