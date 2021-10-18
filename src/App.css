@@ -6,6 +6,11 @@
 }
 a {
   text-decoration: none;
+  color: #2b2d42;
+  transition: 0.3s;
+}
+a:hover {
+  color: #ef233c;
 }
 
 /* google fonts  */
