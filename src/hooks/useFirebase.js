@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
@@ -111,6 +112,23 @@ const useFirebase = () => {
       });
   };
 
+  // password reset
+  const passwordReset = (email) => {
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        swal({
+          text: "Reset email send, check your Inbox.",
+          icon: "info",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
+
   //   observed user
   useEffect(() => {
     const unsubscirbe = onAuthStateChanged(auth, (user) => {
@@ -130,6 +148,7 @@ const useFirebase = () => {
     user,
     createNewUserByEmail,
     loginWithEmail,
+    passwordReset,
   };
 };
 

@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login/Login";
+import PasswordReset from "./components/Login/PasswordReset/PasswordReset";
 import SignUp from "./components/Login/SignUp/SignUp";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Services from "./components/Services/Services";
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route exact path="/signup">
               <SignUp></SignUp>
+            </Route>
+            <Route exact path="/reset">
+              <PasswordReset></PasswordReset>
             </Route>
             <Route path="*">
               <PageNotFound></PageNotFound>
