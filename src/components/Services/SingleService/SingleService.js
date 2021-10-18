@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { useHistory } from "react-router";
+import "./SingleService.css";
 
 const SingleService = ({ service }) => {
   const { id, name, img1, description } = service;
@@ -12,8 +13,12 @@ const SingleService = ({ service }) => {
   return (
     <div>
       <Card className="h-100 shadow-sm">
-        <div>
-          <Card.Img className="img-fluid" variant="top" src={img1} />
+        <div className="overflow-hidden">
+          <Card.Img
+            className="img-fluid service-img"
+            variant="top"
+            src={img1}
+          />
         </div>
         <Card.Body className="py-3">
           <Card.Title>{name.slice(0, 25)}..</Card.Title>

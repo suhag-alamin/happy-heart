@@ -28,7 +28,7 @@ const Footer = () => {
             ></iframe>
           </div>
           <Container>
-            <div className="w-25 footer-details pb-5">
+            <div className=" footer-details pb-5">
               <h3 className="section-title text-center my-4">WORKING HOURS</h3>
               <div>
                 <Table striped hover variant="dark">

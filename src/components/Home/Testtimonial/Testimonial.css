@@ -1,0 +1,42 @@
+/* testimonial-section style */
+.testimonial-section {
+  background: #d90429;
+  color: #edf2f4;
+}
+.feaure .title::after {
+  background: #2b2d42;
+}
+/* author img style  */
+
+.author img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.author-img {
+  position: relative;
+}
+
+/* quote icon style  */
+.quote-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #2b2d42;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.quote-icon:hover {
+  background: #fff;
+  color: #2b2d42;
+  cursor: pointer;
+}
