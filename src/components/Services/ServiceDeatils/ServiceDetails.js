@@ -24,7 +24,7 @@ const ServiceDetails = () => {
         <div className="container">
           <p>
             <Link to="/home">Home/</Link> <Link to="/services">Services/</Link>{" "}
-            <span>{singleService[0]?.name}</span>
+            <small>{singleService[0]?.name}</small>
           </p>
         </div>
       </Container>
