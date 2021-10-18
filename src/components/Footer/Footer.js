@@ -23,7 +23,7 @@ const Footer = () => {
               src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d58414.91875560572!2d90.3585680978055!3d23.785420650329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d23.7806365!2d90.4193258!4m5!1s0x3755c0dbdd6121e9%3A0x28d6161b55e58cc4!2sbest%20heart%20hospital%20in%20dhaka!3m2!1d23.8036934!2d90.3619487!5e0!3m2!1sen!2sbd!4v1634499793190!5m2!1sen!2sbd"
               width="100%"
               height="700"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
             ></iframe>
           </div>

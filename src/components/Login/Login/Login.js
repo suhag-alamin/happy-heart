@@ -9,7 +9,9 @@ import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   // auth context
-  const { signInUsingGoogle, signInUsingGithub, loginWithEmail } = useAuth();
+  const { firebaseContext } = useAuth();
+  const { signInUsingGoogle, signInUsingGithub, loginWithEmail } =
+    firebaseContext;
 
   // form data
   const {
@@ -21,7 +23,6 @@ const Login = () => {
     const { Email, Password } = data;
     loginWithEmail(Email, Password);
   };
-  console.log(errors);
   return (
     <>
       <Container fluid className="py-5 password-authentication-container">

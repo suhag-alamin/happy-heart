@@ -6,7 +6,9 @@ import logo from "../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  // auth context
+  const { firebaseContext } = useAuth();
+  const { user, logOut } = firebaseContext;
   return (
     <>
       <Navbar className="nav-bar shadow sticky-top" expand="lg">
