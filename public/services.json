@@ -35,17 +35,9 @@
     "description": "Heart valve disorders can affect of the valves in your heart. Your heart valves have flaps have flaps that open and close with each heartbeat, allowing blood to flow through the heart's upper and lower chambers and to the rest of your body. The upper chambers of the heart are atria, and the lower chambers of the heart are ventricles.",
     "longDescription": "Blood flows from the right and left atria through the tricuspid and mitral valves, which open to allow blood to flow into the right and left ventricles. These valves then close to prevent blood from flowing back into the atria.\n\n    Once the ventricles have filled with blood, they begin to contract, forcing the pulmonary and aortic valves to open. Blood then flows to the pulmonary artery and aorta. The pulmonary artery carries deoxygenated blood from the heart to the lungs. The aorta, which is the body’s largest artery, carries oxygen-rich blood to the rest of your body.\n    \n    The heart valves work by ensuring that blood flows in a forward direction and doesn’t back up or cause leakage. If you have a heart valve disorder, the valve isn’t able to do this job properly. This can be caused by a leakage of blood, which is called regurgitation, a narrowing of the valve opening, which is called stenosis, or a combination of regurgitation and stenosis.\n    \n    Some people with a heart valve disorder may not have any symptoms, while others may experience conditions like strokes, heart attacks, and blood clots if the heart valve disorder goes untreated."
   },
+
   {
     "id": 5,
-    "name": "Heart tranplant",
-    "img1": "https://i.ibb.co/dGm76zR/heart-transplant-1.jpg",
-    "img2": "https://i.ibb.co/nkTZDXs/heart-transplant-2.jpg",
-    "img3": "https://i.ibb.co/jDDfsXd/heart-transplant-3.jpg",
-    "description": "A heart transplant is a surgical procedure used to treat the most serious cases of heart diseaes. This is a treatment option for people who are in the end stages of heart failure, Medication, lifestyle changes and less invasive procedures haven't succeeded. People must meet specific criteria to be considered a candidate for the procedure.",
-    "longDescription": "After your surgery is finished, you’ll be taken to the intensive care unit (ICU). You’ll be constantly monitored, given pain medication, and outfitted with drainage tubes to remove excess fluid from your chest cavity.\n\n    After the first day or two after the procedure, you’ll most likely be moved from the ICU. However, you’ll remain in the hospital as you continue to heal. Hospital stays range from one to three weeks, based on your individual rate of recovery.\n    \n    You’ll be monitored for infection, and your medication management will begin. Antirejection medications are crucial to ensure that your body doesn’t reject your donor organ. You may be referred to a cardiac rehabilitation unit or center to help you adjust to your new life as a transplant recipient\n    \n    Recovery from a heart transplant can be a long process. For many people, a full recovery can span up to six months."
-  },
-  {
-    "id": 6,
     "name": "Heart surgery",
     "img1": "https://i.ibb.co/bJHY5DP/heart-surgery-1.jpg",
     "img2": "https://i.ibb.co/Wv6911z/heart-surgery-2.jpg",
@@ -54,13 +46,22 @@
     "longDescription": "According to the National Heart, Lung, and Blood Institute (NHLBI), coronary artery bypass grafting (CABG) is the most common type of heart surgery done on adults. During this surgery, a healthy artery or vein is grafted (attached) to a blocked coronary artery. This allows the grafted artery to “bypass” the blocked artery and bring fresh blood to the heart.\n\n    Open-heart surgery is sometimes called traditional heart surgery. Today, many new heart procedures can be performed with only small incisions, not wide openings. Therefore, the term “open-heart surgery” can be misleading."
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Coronary angioplasty and stent implantation",
     "img1": "https://i.ibb.co/RPz2qSC/Coronary-angioplasty-1.png",
     "img2": "https://i.ibb.co/4JP15NQ/Coronary-angioplasty-2.jpg",
     "img3": "https://i.ibb.co/YbnpWSb/Coronary-angioplasty-3.jpg",
     "description": "Coronary angioplasty is a procedure that helps to improve blood flow to your heart.A small balloon is inflated inside one or more of your coronary arteries to open up an area that has become very clogged and, therefore, narrow.",
     "longDescription": "Before the angioplasty procedure begins, you will receive some pain medicine. You may also be given medicine that relaxes you, and blood-thinning medicines to prevent a blood clot from forming.\n\n    You will lie on a padded table. Your doctor will insert a flexible tube (catheter) into an artery. Sometimes the catheter will be placed in your arm or wrist, or in your upper leg (groin) area. You will be awake during the procedure.\n    \n    The doctor will use live x-ray pictures to carefully guide the catheter up into your heart and arteries. Liquid contrast (sometimes called \"dye,\" will be injected into your body to highlight blood flow through the arteries. This helps the doctor see any blockages in the blood vessels that lead to your heart.\n    \n    A guide wire is moved into and across the blockage. A balloon catheter is pushed over the guide wire and into the blockage. The balloon on the end is blown up (inflated). This opens the blocked vessel and restores proper blood flow to the heart.\n    \n    A wire mesh tube (stent) may then be placed in this blocked area. The stent is inserted along with the balloon catheter. It expands when the balloon is inflated. The stent is left there to help keep the artery open."
+  },
+  {
+    "id": 7,
+    "name": "Heart tranplant",
+    "img1": "https://i.ibb.co/dGm76zR/heart-transplant-1.jpg",
+    "img2": "https://i.ibb.co/nkTZDXs/heart-transplant-2.jpg",
+    "img3": "https://i.ibb.co/jDDfsXd/heart-transplant-3.jpg",
+    "description": "A heart transplant is a surgical procedure used to treat the most serious cases of heart diseaes. This is a treatment option for people who are in the end stages of heart failure, Medication, lifestyle changes and less invasive procedures haven't succeeded. People must meet specific criteria to be considered a candidate for the procedure.",
+    "longDescription": "After your surgery is finished, you’ll be taken to the intensive care unit (ICU). You’ll be constantly monitored, given pain medication, and outfitted with drainage tubes to remove excess fluid from your chest cavity.\n\n    After the first day or two after the procedure, you’ll most likely be moved from the ICU. However, you’ll remain in the hospital as you continue to heal. Hospital stays range from one to three weeks, based on your individual rate of recovery.\n    \n    You’ll be monitored for infection, and your medication management will begin. Antirejection medications are crucial to ensure that your body doesn’t reject your donor organ. You may be referred to a cardiac rehabilitation unit or center to help you adjust to your new life as a transplant recipient\n    \n    Recovery from a heart transplant can be a long process. For many people, a full recovery can span up to six months."
   },
   {
     "id": 8,

@@ -1,8 +1,6 @@
 import React from "react";
 import { Carousel, Col, Row } from "react-bootstrap";
 import "./Banner.css";
-import slider1 from "../../../images/slider-1.jpg";
-import slider2 from "../../../images/slider-2.jpg";
 
 const Banner = () => {
   return (
