@@ -87,7 +87,11 @@ const SignUp = () => {
               </span>
             )}
 
-            <input className="happy-btn" type="submit" value="Sign Up" />
+            <input
+              className="happy-btn btn-danger"
+              type="submit"
+              value="Sign Up"
+            />
             <div className="text-center mb-3">
               <Link style={{ color: "#2b2d42" }} to="/login">
                 Already have an account?

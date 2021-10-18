@@ -12,7 +12,7 @@ const Newsletter = () => {
           lg={6}
           className="text-center animate__animated animate__backInLeft animate__delay-2s"
         >
-          <img src={newsletter} alt="" />
+          <img className="img-fluid" src={newsletter} alt="" />
         </Col>
         <Col
           lg={6}

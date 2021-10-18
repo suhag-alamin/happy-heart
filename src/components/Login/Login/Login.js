@@ -58,7 +58,11 @@ const Login = () => {
               </span>
             )}
 
-            <input className="happy-btn" type="submit" value="LogIn" />
+            <input
+              className="happy-btn btn-danger"
+              type="submit"
+              value="LogIn"
+            />
             <div className="text-center mb-3">
               <Link className="me-4" style={{ color: "#2b2d42" }} to="/signup">
                 New to Happy Heart?

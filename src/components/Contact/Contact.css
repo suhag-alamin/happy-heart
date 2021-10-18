@@ -20,3 +20,12 @@
   background: #2b2d42;
   color: #edf2f4;
 }
+.form-container textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px 0 10px 0;
+  outline: none;
+  border: 1px solid #ddd;
+}
