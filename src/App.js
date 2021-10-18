@@ -10,41 +10,45 @@ import Login from "./components/Login/Login/Login";
 import SignUp from "./components/Login/SignUp/SignUp";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Services from "./components/Services/Services";
+import ContextProvider from "./context/ContextProvider";
 
 function App() {
   return (
     <div className="App">
-      {/* router  */}
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route exact path="/services">
-            <Services></Services>
-          </Route>
-          <Route exact path="/about">
-            <About></About>
-          </Route>
-          <Route exact path="/contact">
-            <Contact></Contact>
-          </Route>
-          <Route exact path="/login">
-            <Login></Login>
-          </Route>
-          <Route exact path="/signup">
-            <SignUp></SignUp>
-          </Route>
-          <Route path="*">
-            <PageNotFound></PageNotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      {/* context api  */}
+      <ContextProvider>
+        {/* router  */}
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <Route exact path="/about">
+              <About></About>
+            </Route>
+            <Route exact path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/signup">
+              <SignUp></SignUp>
+            </Route>
+            <Route path="*">
+              <PageNotFound></PageNotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </ContextProvider>
     </div>
   );
 }

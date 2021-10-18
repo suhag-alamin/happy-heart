@@ -5,8 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
+  // auth context
+  const { signInUsingGoogle, signInUsingGithub } = useAuth();
+
+  // form data
   const {
     register,
     handleSubmit,
@@ -59,12 +64,18 @@ const Login = () => {
             </div>
           </form>
           <div className="border-top py-4 text-center">
-            <Button className="social-login happy-btn me-4">
+            <Button
+              onClick={signInUsingGoogle}
+              className="social-login btn-danger happy-btn me-4"
+            >
               <span>
                 <FontAwesomeIcon icon={faGoogle} />
               </span>
             </Button>
-            <Button className="social-login happy-btn me-2">
+            <Button
+              onClick={signInUsingGithub}
+              className="social-login btn-danger happy-btn me-2"
+            >
               <span>
                 <FontAwesomeIcon icon={faGithub} />
               </span>
