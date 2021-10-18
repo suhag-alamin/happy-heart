@@ -5,6 +5,9 @@ import {
   GithubAuthProvider,
   signOut,
   onAuthStateChanged,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
@@ -67,6 +70,47 @@ const useFirebase = () => {
       });
   };
 
+  //   create new user by email
+  const createNewUserByEmail = (name, email, password) => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        setUser(result.user);
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        }).then(() => {});
+        swal({
+          title: "Account Successfully created!!",
+          text: "Please Login",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
+
+  //   login using email and password
+
+  const loginWithEmail = (email, password) => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        setUser(result.user);
+        swal({
+          title: "LogIn Successfull!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
+
   //   observed user
   useEffect(() => {
     const unsubscirbe = onAuthStateChanged(auth, (user) => {
@@ -84,6 +128,8 @@ const useFirebase = () => {
     signInUsingGithub,
     logOut,
     user,
+    createNewUserByEmail,
+    loginWithEmail,
   };
 };
 

@@ -9,7 +9,7 @@ import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   // auth context
-  const { signInUsingGoogle, signInUsingGithub } = useAuth();
+  const { signInUsingGoogle, signInUsingGithub, loginWithEmail } = useAuth();
 
   // form data
   const {
@@ -17,7 +17,10 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const { Email, Password } = data;
+    loginWithEmail(Email, Password);
+  };
   console.log(errors);
   return (
     <>
