@@ -47,6 +47,22 @@ const Header = () => {
               >
                 Contact
               </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                activeClassName="selected"
+                className="nav-link"
+                to="/login"
+              >
+                Login
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                activeClassName="selected"
+                className="nav-link"
+                to="/signup"
+              >
+                SignUp
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

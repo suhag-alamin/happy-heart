@@ -1,0 +1,26 @@
+.password-authentication-container {
+  background: #ffe8d6;
+}
+.form-container {
+  /* background: #000; */
+}
+.form-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px 0 10px 0;
+  outline: none;
+  border: 1px solid #ddd;
+}
+.field-error {
+  color: #d90429 !important;
+}
+/* social-login */
+.social-login {
+}
+.social-login span svg {
+  width: 50px !important;
+  height: 50px;
+  display: inline-block;
+}

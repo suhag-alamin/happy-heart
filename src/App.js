@@ -6,6 +6,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login/Login";
+import SignUp from "./components/Login/SignUp/SignUp";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Services from "./components/Services/Services";
 
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/signup">
+            <SignUp></SignUp>
           </Route>
           <Route path="*">
             <PageNotFound></PageNotFound>

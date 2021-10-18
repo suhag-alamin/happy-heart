@@ -26,6 +26,9 @@ h6 {
 /* button style  */
 .happy-btn {
   background: #ef233c;
+  color: #edf2f4;
+  cursor: pointer;
+  border: none;
 }
 .happy-btn:hover {
   background: #d90429;
