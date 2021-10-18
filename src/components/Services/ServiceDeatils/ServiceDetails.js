@@ -23,7 +23,7 @@ const ServiceDetails = () => {
       <Container fluid className="single-service-banner">
         <div className="container">
           <p>
-            <Link to="/home">Home/</Link> <Link to="/services">Services/</Link>{" "}
+            <Link to="/">Home/</Link> <Link to="/services">Services/</Link>{" "}
             <small>{singleService[0]?.name}</small>
           </p>
         </div>

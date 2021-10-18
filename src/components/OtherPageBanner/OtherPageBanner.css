@@ -1,0 +1,25 @@
+/* single serive banner style */
+.other-banner {
+  background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.7) 0%,
+      rgba(43, 45, 66, 0.75) 35%
+    ),
+    url(../../images/service-banner.jpg) no-repeat bottom center;
+  background-size: cover;
+  padding: 150px 0;
+  z-index: -1;
+}
+
+.banner-breadcumb {
+  font-size: 30px;
+  color: #edf2f4;
+}
+
+.other-banner a,
+small {
+  color: #edf2f4;
+}
+.other-banner a:hover {
+  color: #ef233c;
+}

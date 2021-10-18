@@ -12,11 +12,12 @@ import PasswordReset from "./components/Login/PasswordReset/PasswordReset";
 import SignUp from "./components/Login/SignUp/SignUp";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import ServiceDetails from "./components/Services/ServiceDeatils/ServiceDetails";
-import Services from "./components/Services/Services";
+
 import AuthProvider from "./context/AuthProvider";
 import DataProvider from "./context/DataProvider";
 
 import "animate.css";
+import Services from "./components/Services/Services/Services";
 
 function App() {
   return (
