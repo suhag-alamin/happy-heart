@@ -7,6 +7,7 @@ import {
 } from "firebase/auth";
 import { useState } from "react";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
+import swal from "sweetalert";
 
 initializeAuthentication();
 
@@ -24,18 +25,32 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         console.log(result.user);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
       })
       .catch((error) => {
-        alert(error.message);
+        swal({
+          text: error.message,
+          icon: "error",
+        });
       });
   };
   const signInUsingGithub = () => {
     signInWithPopup(auth, githubProvider)
       .then((result) => {
         console.log(result.user);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
       })
       .catch((error) => {
-        alert(error.message);
+        swal({
+          text: error.message,
+          icon: "error",
+        });
       });
   };
   const logOut = () => {
@@ -44,7 +59,10 @@ const useFirebase = () => {
         setUser();
       })
       .catch((error) => {
-        alert(error.message);
+        swal({
+          text: error.message,
+          icon: "error",
+        });
       });
   };
   return {
