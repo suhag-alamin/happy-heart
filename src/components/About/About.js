@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import OtherPageBanner from "../OtherPageBanner/OtherPageBanner";
 import "./About.css";
@@ -12,8 +12,19 @@ import {
   faAmbulance,
   faHospitalAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import SingleTeamMember from "./SingleTeamMember/SingleTeamMember";
 
 const About = () => {
+  // team data
+  const [team, setTeam] = useState([]);
+  useEffect(() => {
+    const loadData = async () => {
+      const res = await fetch("./team.json");
+      const data = await res.json();
+      setTeam(data);
+    };
+    loadData();
+  }, []);
   return (
     <>
       {/* banner  */}
@@ -124,6 +135,32 @@ const About = () => {
             </div>
           </Col>
         </Row>
+      </Container>
+      {/* team member section  */}
+      <Container fluid className="team-member-section py-5">
+        <Container>
+          {/* team member top  */}
+          <div className="about-top">
+            <p className="single-service-title mb-4">PEOPLE YOU CAN TRUST</p>
+            <h3 className="fs-1">Your reliable team</h3>
+            <h3 className="section-title fs-1" style={{ fontWeight: 700 }}>
+              Medicare doctors
+            </h3>
+            <p className="text-muted w-50 my-4">
+              Objectively integrate enterprise-wide strategic theme areas with
+              functionalized infrastructures. Interactively productize premium
+              technologies.
+            </p>
+          </div>
+          {/* team members  */}
+          <Row xs={1} md={2} lg={4} className="g-4 py-5 text-center">
+            {team.map((member) => (
+              <Col key={member.id} className="h-100">
+                <SingleTeamMember member={member}></SingleTeamMember>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </Container>
     </>
   );
