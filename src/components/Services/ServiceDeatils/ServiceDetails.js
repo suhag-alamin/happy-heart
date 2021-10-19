@@ -29,7 +29,7 @@ const ServiceDetails = () => {
         </div>
       </Container>
       <Container className="py-5 mb-5">
-        <Row className="gx-5">
+        <Row className="gx-4">
           <Col lg={8}>
             <div>
               <h3 className="section-title single-service-title fs-2">

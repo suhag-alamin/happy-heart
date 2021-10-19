@@ -45,3 +45,13 @@ small {
   list-style: none;
   padding: 5px 0;
 }
+
+@media only screen and (max-width: 400px) {
+  .single-service-banner {
+    padding: 60px 0;
+  }
+  .single-service-banner a,
+  small {
+    font-size: 14px;
+  }
+}

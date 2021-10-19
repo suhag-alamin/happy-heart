@@ -23,3 +23,9 @@ small {
 .other-banner a:hover {
   color: #ef233c;
 }
+
+@media only screen and (max-width: 400px) {
+  .other-banner {
+    padding: 60px 0;
+  }
+}
