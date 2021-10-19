@@ -25,7 +25,7 @@ const Testtimonial = () => {
           <p>A GOOD WORD MEANS A LOT</p>
         </div>
         {/* author testimonials  */}
-        <Row className="py-4">
+        <Row className="py-4 g-4">
           <Col
             xs={12}
             md={6}
