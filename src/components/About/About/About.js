@@ -40,14 +40,14 @@ const About = () => {
           <h3 className="section-title fs-1" style={{ fontWeight: 700 }}>
             Our core values
           </h3>
-          <p className="text-muted w-50 mx-auto my-4">
+          <p className="text-muted w-50 mx-auto my-4 about-page-text">
             Completely synergize resource taxing relationships via premier niche
             markets. Professionally cultivate one-to-one customer service with
             robust ideas.
           </p>
         </div>
         {/* about core values  */}
-        <Row xs={1} md={2} lg={3} className="g-4 py-5 about-values">
+        <Row xs={1} sm={2} md={2} lg={3} className="g-4 py-5 about-values">
           <Col className="value-div animate__animated animate__fadeInLeft">
             <div className="d-flex gap-4">
               <div>
@@ -146,7 +146,7 @@ const About = () => {
             <h3 className="section-title fs-1" style={{ fontWeight: 700 }}>
               Medicare doctors
             </h3>
-            <p className="text-muted w-50 mx-auto my-4">
+            <p className="text-muted w-50 mx-auto my-4 about-page-text">
               Objectively integrate enterprise-wide strategic theme areas with
               functionalized infrastructures. Interactively productize premium
               technologies.

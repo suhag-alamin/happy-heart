@@ -23,3 +23,8 @@
 .team-member-section {
   background: #edf2f4;
 }
+@media only screen and (max-width: 768px) {
+  .about-page-text {
+    width: 80% !important;
+  }
+}
