@@ -135,22 +135,24 @@ const Login = () => {
             </div>
           </form>
           <div className="border-top py-4 text-center">
-            <Button
-              onClick={hanldeGoogleLogin}
-              className="social-login btn-danger happy-btn me-4"
-            >
-              <span>
-                <FontAwesomeIcon icon={faGoogle} />
-              </span>
-            </Button>
-            <Button
-              onClick={handleGithubLogin}
-              className="social-login btn-danger happy-btn me-2"
-            >
-              <span>
-                <FontAwesomeIcon icon={faGithub} />
-              </span>
-            </Button>
+            <div className="social-login-box">
+              <Button
+                onClick={hanldeGoogleLogin}
+                className="social-login btn-danger happy-btn me-4"
+              >
+                <span>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </span>
+              </Button>
+              <Button
+                onClick={handleGithubLogin}
+                className="social-login btn-danger happy-btn me-2"
+              >
+                <span>
+                  <FontAwesomeIcon icon={faGithub} />
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
       </Container>
