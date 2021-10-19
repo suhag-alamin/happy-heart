@@ -18,6 +18,7 @@ import DataProvider from "./context/DataProvider";
 import "animate.css";
 import Services from "./components/Services/Services/Services";
 import About from "./components/About/About/About";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -39,9 +40,9 @@ function App() {
               <Route exact path="/services">
                 <Services></Services>
               </Route>
-              <Route exact path="/services/:serviceId">
+              <PrivateRoute exact path="/services/:serviceId">
                 <ServiceDetails></ServiceDetails>
-              </Route>
+              </PrivateRoute>
               <Route exact path="/about">
                 <About></About>
               </Route>
