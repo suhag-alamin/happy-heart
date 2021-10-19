@@ -33,3 +33,19 @@
   height: 2px;
   background: #ef233c;
 }
+
+@media only screen and (max-width: 400px) {
+  .slider-one {
+    padding: 100px 30px;
+  }
+  .slider-two {
+    padding: 100px 30px;
+  }
+  .banner-title {
+    font-size: 30px !important;
+  }
+  .banner-text {
+    font-size: 16px;
+    width: 100% !important;
+  }
+}
