@@ -43,20 +43,20 @@ const useFirebase = () => {
     // });
   };
   const signInUsingGithub = () => {
-    signInWithPopup(auth, githubProvider)
-      .then((result) => {
-        console.log(result.user);
-        swal({
-          title: "Successfully Sign In!!",
-          icon: "success",
-        });
-      })
-      .catch((error) => {
-        swal({
-          text: error.message,
-          icon: "error",
-        });
-      });
+    return signInWithPopup(auth, githubProvider);
+    // .then((result) => {
+    //   console.log(result.user);
+    //   swal({
+    //     title: "Successfully Sign In!!",
+    //     icon: "success",
+    //   });
+    // })
+    // .catch((error) => {
+    //   swal({
+    //     text: error.message,
+    //     icon: "error",
+    //   });
+    // });
   };
   const logOut = () => {
     signOut(auth)

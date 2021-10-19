@@ -16,6 +16,8 @@ const Login = () => {
   const history = useHistory();
   const location = useLocation();
   const redirectUrl = location.state?.from || "/";
+
+  // google redirect
   const hanldeGoogleLogin = () => {
     signInUsingGoogle()
       .then((result) => {
@@ -32,7 +34,23 @@ const Login = () => {
         });
       });
   };
-
+  // github redirect
+  const handleGithubLogin = () => {
+    signInUsingGithub()
+      .then((result) => {
+        history.push(redirectUrl);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
   // form data
   const {
     register,
@@ -104,7 +122,7 @@ const Login = () => {
               </span>
             </Button>
             <Button
-              onClick={signInUsingGithub}
+              onClick={handleGithubLogin}
               className="social-login btn-danger happy-btn me-2"
             >
               <span>

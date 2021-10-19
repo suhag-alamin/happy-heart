@@ -6,11 +6,54 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import swal from "sweetalert";
+import { useHistory, useLocation } from "react-router-dom";
 
 const SignUp = () => {
   // auth context
   const { signInUsingGoogle, signInUsingGithub, createNewUserByEmail } =
     useAuth();
+
+  // redirect private route
+  const history = useHistory();
+  const location = useLocation();
+  const redirectUrl = location.state?.from || "/";
+
+  // google redirect
+  const hanldeGoogleLogin = () => {
+    signInUsingGoogle()
+      .then((result) => {
+        history.push(redirectUrl);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
+
+  // github redirect
+  const handleGithubLogin = () => {
+    signInUsingGithub()
+      .then((result) => {
+        history.push(redirectUrl);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
 
   // form data
   const {
@@ -101,7 +144,7 @@ const SignUp = () => {
           <div className="border-top py-4 text-center">
             <p className="text-muted mb-4">Or sign in using any of these</p>
             <Button
-              onClick={signInUsingGoogle}
+              onClick={hanldeGoogleLogin}
               className="social-login btn-danger happy-btn me-4"
             >
               <span>
@@ -109,7 +152,7 @@ const SignUp = () => {
               </span>
             </Button>
             <Button
-              onClick={signInUsingGithub}
+              onClick={handleGithubLogin}
               className="social-login btn-danger happy-btn me-2"
             >
               <span>
