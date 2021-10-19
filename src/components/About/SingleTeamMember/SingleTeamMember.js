@@ -1,8 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./SingleTeamMember.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const SingleTeamMember = ({ member }) => {
   const { name, img, degisnation, description } = member;
