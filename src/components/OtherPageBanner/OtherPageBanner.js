@@ -9,7 +9,8 @@ const OtherPageBanner = ({ children }) => {
       <Container fluid className="other-banner">
         <div className="container text-center">
           <h5 className="banner-breadcumb">
-            <Link to="/">Home /</Link> {children}
+            <Link to="/">Home /</Link>{" "}
+            <small className="other-banner-text">{children}</small>
           </h5>
         </div>
       </Container>

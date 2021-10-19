@@ -25,7 +25,7 @@ const Services = () => {
                 services
               </span>
             </h3>
-            <p className="w-50 mx-auto mt-3">
+            <p className="w-50 mx-auto mt-3 serivces-page-text">
               Capitalize on low hanging fruit to identify a ballpark value added
               activity to beta test. Override the digital divide with additional
               clickthroughs.

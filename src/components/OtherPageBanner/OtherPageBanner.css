@@ -11,13 +11,14 @@
   z-index: -1;
 }
 
-.banner-breadcumb {
+.banner-breadcumb,
+.other-banner-text {
   font-size: 30px;
   color: #edf2f4;
 }
 
 .other-banner a,
-small {
+.other-banner-text {
   color: #edf2f4;
 }
 .other-banner a:hover {
@@ -27,5 +28,9 @@ small {
 @media only screen and (max-width: 400px) {
   .other-banner {
     padding: 60px 0;
+  }
+  .other-banner a,
+  .other-banner-text {
+    font-size: 14px;
   }
 }
