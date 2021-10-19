@@ -17,10 +17,32 @@
   color: #d90429 !important;
 }
 /* social-login */
-.social-login {
-}
+
 .social-login span svg {
   width: 50px !important;
   height: 50px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-container {
+    width: 90% !important;
+  }
+  .social-login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .social-login {
+    margin-right: 0 !important;
+  }
 }
