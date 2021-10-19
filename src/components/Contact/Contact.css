@@ -29,3 +29,16 @@
   outline: none;
   border: 1px solid #ddd;
 }
+
+@media only screen and (max-width: 570px) {
+  .contact-details-icons {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-details .single-service-title::after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

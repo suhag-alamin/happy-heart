@@ -28,9 +28,9 @@ const Contact = () => {
       </OtherPageBanner>
       <Container fluid className="contact-top py-5">
         <Container className="py-4">
-          <Row className="text-white">
-            <Col md={6} lg={6} xl={3}>
-              <div className="d-flex gap-4">
+          <Row className="text-white g-4">
+            <Col sm={6} md={6} lg={6} xl={3}>
+              <div className="d-flex contact-details-icons gap-4">
                 <div>
                   <FontAwesomeIcon
                     className="contact-icon"
@@ -44,8 +44,8 @@ const Contact = () => {
               </div>
             </Col>
 
-            <Col md={6} lg={6} xl={3}>
-              <div className="d-flex gap-4">
+            <Col sm={6} md={6} lg={6} xl={3}>
+              <div className="d-flex contact-details-icons gap-4">
                 <div>
                   <FontAwesomeIcon
                     className="contact-icon"
@@ -59,8 +59,8 @@ const Contact = () => {
               </div>
             </Col>
 
-            <Col md={6} lg={6} xl={3}>
-              <div className="d-flex gap-4">
+            <Col sm={6} md={6} lg={6} xl={3}>
+              <div className="d-flex contact-details-icons gap-4">
                 <div>
                   <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
                 </div>
@@ -71,8 +71,8 @@ const Contact = () => {
               </div>
             </Col>
 
-            <Col md={6} lg={6} xl={3}>
-              <div className="d-flex gap-4">
+            <Col sm={6} md={6} lg={6} xl={3}>
+              <div className="d-flex contact-details-icons gap-4">
                 <div>
                   <FontAwesomeIcon
                     className="contact-icon"
