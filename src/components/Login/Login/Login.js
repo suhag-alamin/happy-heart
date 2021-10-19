@@ -4,12 +4,34 @@ import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import swal from "sweetalert";
 
 const Login = () => {
   // auth context
   const { signInUsingGoogle, signInUsingGithub, loginWithEmail } = useAuth();
+
+  // redirect private route
+  const history = useHistory();
+  const location = useLocation();
+  const redirectUrl = location.state?.from || "/";
+  const hanldeGoogleLogin = () => {
+    signInUsingGoogle()
+      .then((result) => {
+        history.push(redirectUrl);
+        swal({
+          title: "Successfully Sign In!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
 
   // form data
   const {
@@ -74,7 +96,7 @@ const Login = () => {
           </form>
           <div className="border-top py-4 text-center">
             <Button
-              onClick={signInUsingGoogle}
+              onClick={hanldeGoogleLogin}
               className="social-login btn-danger happy-btn me-4"
             >
               <span>

@@ -27,20 +27,20 @@ const useFirebase = () => {
 
   // google sign in
   const signInUsingGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        console.log(result.user);
-        swal({
-          title: "Successfully Sign In!!",
-          icon: "success",
-        });
-      })
-      .catch((error) => {
-        swal({
-          text: error.message,
-          icon: "error",
-        });
-      });
+    return signInWithPopup(auth, googleProvider);
+    // .then((result) => {
+    //   console.log(result.user);
+    //   swal({
+    //     title: "Successfully Sign In!!",
+    //     icon: "success",
+    //   });
+    // })
+    // .catch((error) => {
+    //   swal({
+    //     text: error.message,
+    //     icon: "error",
+    //   });
+    // });
   };
   const signInUsingGithub = () => {
     signInWithPopup(auth, githubProvider)
