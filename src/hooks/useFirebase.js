@@ -100,20 +100,20 @@ const useFirebase = () => {
   //   login using email and password
 
   const loginWithEmail = (email, password) => {
-    signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        setUser(result.user);
-        swal({
-          title: "LogIn Successfull!!",
-          icon: "success",
-        });
-      })
-      .catch((error) => {
-        swal({
-          text: error.message,
-          icon: "error",
-        });
-      });
+    return signInWithEmailAndPassword(auth, email, password);
+    // .then((result) => {
+    //   setUser(result.user);
+    //   swal({
+    //     title: "LogIn Successfull!!",
+    //     icon: "success",
+    //   });
+    // })
+    // .catch((error) => {
+    //   swal({
+    //     text: error.message,
+    //     icon: "error",
+    //   });
+    // });
   };
 
   // password reset

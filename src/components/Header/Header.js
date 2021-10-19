@@ -79,7 +79,7 @@ const Header = () => {
                 {user?.photoURL ? (
                   <img className="user-img" src={user.photoURL} alt="" />
                 ) : (
-                  <small>{user?.displayName}</small>
+                  <small className="text-dark ms-3">{user?.displayName}</small>
                 )}
               </span>
             </Nav>

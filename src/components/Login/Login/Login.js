@@ -62,8 +62,27 @@ const Login = () => {
   } = useForm();
   const onSubmit = (data) => {
     const { Email, Password } = data;
-    loginWithEmail(Email, Password);
+    handleEmailLogin(Email, Password);
   };
+
+  const handleEmailLogin = (Email, Password) => {
+    loginWithEmail(Email, Password)
+      .then((result) => {
+        // setUser(result.user);
+        history.push(redirectUrl);
+        swal({
+          title: "LogIn Successfull!!",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        swal({
+          text: error.message,
+          icon: "error",
+        });
+      });
+  };
+
   return (
     <>
       <Container fluid className="py-5 password-authentication-container">
