@@ -11,8 +11,12 @@ import { useHistory, useLocation } from "react-router-dom";
 
 const SignUp = () => {
   // auth context
-  const { signInUsingGoogle, signInUsingGithub, createNewUserByEmail } =
-    useAuth();
+  const {
+    signInUsingGoogle,
+    signInUsingGithub,
+    createNewUserByEmail,
+    setIsLoading,
+  } = useAuth();
 
   // redirect private route
   const history = useHistory();
@@ -34,7 +38,8 @@ const SignUp = () => {
           text: error.message,
           icon: "error",
         });
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
 
   // github redirect
@@ -52,7 +57,8 @@ const SignUp = () => {
           text: error.message,
           icon: "error",
         });
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
 
   // form data

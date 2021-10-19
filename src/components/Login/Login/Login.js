@@ -10,7 +10,8 @@ import swal from "sweetalert";
 
 const Login = () => {
   // auth context
-  const { signInUsingGoogle, signInUsingGithub, loginWithEmail } = useAuth();
+  const { signInUsingGoogle, signInUsingGithub, loginWithEmail, setIsLoading } =
+    useAuth();
 
   // redirect private route
   const history = useHistory();
@@ -32,7 +33,8 @@ const Login = () => {
           text: error.message,
           icon: "error",
         });
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
   // github redirect
   const handleGithubLogin = () => {
@@ -49,7 +51,8 @@ const Login = () => {
           text: error.message,
           icon: "error",
         });
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
   // form data
   const {
