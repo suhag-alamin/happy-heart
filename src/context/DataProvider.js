@@ -5,7 +5,9 @@ const DataProvider = ({ children }) => {
   const [services, setServices] = useState([]);
   useEffect(() => {
     const loadData = async () => {
-      const res = await fetch("./services.json");
+      const res = await fetch(
+        "https://developer-suhag.github.io/happy-heart-json/services.json"
+      );
       const data = await res.json();
       setServices(data);
     };
