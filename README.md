@@ -12,6 +12,7 @@ Happy Hearts, Happy Families.
 - Designed Healthcare-related website including login features
 - Users can learn more about the services
 - Compatible with all devices
+- Improved performance by optimizing and resizing images
 
 ## Technology Used -
 
