@@ -20,4 +20,4 @@ React.js, React Bootstrap, CSS, Firebase.
 
 ## Author
 
-- [Suhag Al Amin](https://github.com/developer-suhag)
+- [Suhag Al Amin](https://github.com/suhag-alamin)

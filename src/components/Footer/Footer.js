@@ -144,7 +144,7 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faTwitter} />
                     </a>
                     <a
-                      href="https://github.com/developer-suhag"
+                      href="https://github.com/suhag-alamin"
                       target="_blank"
                       rel="noreferrer"
                     >
